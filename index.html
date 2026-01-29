@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+
+  <head>
+
+     <link rel="shortcut icon" type="x-icon" href="logo2.png">
+
+    <meta charset="utf-8">
+
+    <title>Semester 1 GP</title>
+
+    <!-- CSS only -->
+
+    <script src="jquery.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<!-- JavaScript Bundle with Popper -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="bootstrap.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="s1.js"></script>
+
+  </head>
+
+  <body>
+	
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+ <img  src="logo2.png" height="40" width="40" >
+   
+
+ <a style=" border-radius: 15px;" href=""><b>S1</b></a>
+
+ <a style=" border-radius: 15px;" href=""><b>Taki eedine</b></a>
+      
+  </nav>
+
+
+
+
+
+
+
+
+                    <table class="table table-dark  table-borderless mb-0 table-responsive" class="thegrid"  >
+
+                      <thead>
+
+                        <tr>
+
+                          <th scope="col">la matiere</th>
+
+                          <th scope="col">Note td</th>
+                      
+
+                          <th scope="col">Controle</th>
+
+                          <th scope="col">Note TP</th>
+
+                        
+
+                            <th scope="col">la moyenne</th>
+
+                        </tr>
+
+                      </thead>
+
+                      <tbody>
+
+                        <tr>
+
+                          <th scope="row">Analyse 1</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="an1ntd" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()"  id="an1ctrl">
+
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total  " onkeyup="calcu()" id="an1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Algebre 1</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note TD /20" onkeyup="calcu()" id="ann1ntd" >
+
+                        </td>
+
+                   
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()"  id="ann1ctrl">
+
+                        </td>
+                        
+                        <td>
+
+
+                       </td>
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total " onkeyup="calcu()" id="ann1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+          
+
+                          <th scope="row">èlèment de mècanique</th>
+
+                          <td>
+                            <input type="number" class="form-control" placeholder="Note TD /20" onkeyup="calcu()" id="me1td">
+                          </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="me1ctrl">
+
+                        </td>
+                        <td>
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="me1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Structure de matière</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="on1ntd" >
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()"  id="on1ctrl">
+
+                        </td>
+
+                        <td>
+
+                          
+                        </td>
+
+
+ 
+
+                  
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="on1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Structure des ordinateurs</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note TP /20" onkeyup="calcu()" id="po1ntp" >
+
+                        </td>
+
+                    
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()"  id="po1ctrl">
+
+                        </td>
+                        <td></td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total " onkeyup="calcu()" id="po1tt">
+
+                        </td>
+
+                        </tr>
+    
+                       <tr>
+
+                          <th scope="row">Dimension èthique</th>
+
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="hse1ctrl"> 
+
+                        </td>
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="hse1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">les mètiers en sciences et thechnologies</th>
+
+                        <td>
+
+                          
+                        </td>
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="el1ctrl" >
+
+                        </td>
+
+                        <td>
+
+                         
+
+                        </td>
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="el1tt">
+
+                        </td>
+
+                        </tr>
+
+                          <th  scope="row">tp èlèment de mecanique </th>
+                          <td></td>
+
+                        <td>
+
+                        <input type="number" class="form-control" placeholder="Note TP /20" onkeyup="calcu()" id="en1ctrl" >
+
+                        </td>
+
+                        <td>
+
+                          
+
+                        </td>
+
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="en1tt" >
+
+                        </td>
+
+                        </tr>
+
+                        <th  scope="row">tp structure de la matière</th>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note TP /20" onkeyup="calcu()" id="de1tp" >
+
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="de1tt" >
+
+                        </td>
+
+                        </tr>
+
+                        <!--<th  scope="row"></th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="com1ntd" >
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="com1ctrl" >
+
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="com1tt" >
+
+                        </td>
+
+                        </tr>
+
+                        
+
+                        <tr>
+
+                          <th  scope="row">total</th>
+
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>-->
+
+                        <td style="background-color:#1dbf97; border-radius: 5px; " >
+
+                          <b style="text-color:rgb(0, 255, 242);">la Moyenne générale:</b>
+
+                          <span type="number"  id="tt"></span>
+
+                        </td>
+                        <td><p><b>ام</b></p></td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+<footer class="bg-dark text-center text-lg-start">
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);color:#1dbf97;">
+    by:.dev
+  </div>
+ 
+</footer>
+
+
+
+<style>
+a:link, a:visited {
+  background-color: #f8f9fa;
+  color: rgb(13, 125, 28);
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: ;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #1dbf97;
+  color:white;
+}
+.mynav{
+padding: 10px;
+border-color: #f8f9fa;
+margin: auto;
+}
+.WebContainer{
+
+    width:100%;
+
+    min-width:1000px;
+
+    height:auto;
+
+}
+
+@media
+
+only screen and (max-width: 760px),
+
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+
+	/* Force table to not be like tables anymore */
+
+	table, thead, tbody, th, td, tr {
+
+		display: block;
+
+	}
+
+
+
+	/* Hide table headers (but not display:  ;, for accessibility) */
+
+	thead tr {
+
+		position: absolute;
+
+		top: -9999px;
+
+		left: -9999px;
+
+	}
+
+
+
+	tr { border: 1px solid #ccc; }
+
+
+
+	td {
+
+		/* Behave  like a "row" */
+
+		border-color: inherit ;
+
+		border-bottom: 1px solid #eee;
+
+		position: relative;
+
+		padding-left: 50%;
+
+    width:80%;
+
+    margin: auto;
+ 
+    align-self: center;
+
+
+
+	}
+
+
+
+	td:before {
+
+		/* Now like a table header */
+
+		position: absolute;
+
+		/* Top/left values mimic padding */
+
+		top: 6px;
+
+		left: 6px;
+
+		width: 45%;
+
+		padding-right: 10px;
+
+		white-space: nowrap;
+
+	}
+
+
+
+
+
+html, body
+
+    {
+
+      -ms-content-zooming: ;
+
+      touch-action: ;
+
+      content-zooming:  ;
+
+       // hide vertical
+
+    overflow-x: hidden;
+
+  // hide vertical
+
+    overflow-x:  ;
+
+    }rflow-style:  ;
+
+
+
+
+
+  }
+
+
+
+}
+
+</html>
