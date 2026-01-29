@@ -21,12 +21,11 @@ function calcu() {
   
     var ann1ctrl = Number(document.getElementById('ann1ctrl').value);
   
-    var ann1ntp = Number(document.getElementById('ann1ntp').value);
   
 
 
 
-    var ann1tt = document.getElementById('ann1tt').value = Number((ann1ntd)*0.2+(ann1ntp)*0.2+(ann1ctrl*0.6));
+    var ann1tt = document.getElementById('ann1tt').value = Number((ann1ntd)*0.4+(ann1ctrl*0.6));
   
   
   
@@ -54,9 +53,8 @@ function calcu() {
   
     var on1ctrl = Number(document.getElementById('on1ctrl').value);
 
-    var on1ntp = Number(document.getElementById('on1ntp').value);
   
-    var on1tt = document.getElementById('on1tt').value = Number(((on1ntd)*2+(on1ctrl*6)+(on1ntp*2))/10);
+    var on1tt = document.getElementById('on1tt').value = Number(((on1ntd)*4+(on1ctrl*6))/10);
   
   
   
@@ -87,11 +85,10 @@ function calcu() {
   
   
   
-      var el1ntd = Number(document.getElementById('el1ntd').value);
-      var el1ntp = Number(document.getElementById('el1ntp').value);
+     
       var el1ctrl = Number(document.getElementById('el1ctrl').value);
 
-    var el1tt = document.getElementById('el1tt').value = Number((((el1ntd)*2)+((el1ntp)*2)+(el1ctrl*6))/10);
+    var el1tt = document.getElementById('el1tt').value = Number((el1ctrl*1));
   
   
   
@@ -123,7 +120,7 @@ function calcu() {
   
 
 
-        document.getElementById("tt").innerHTML = ((3*an1tt)+(3*ann1tt)+(2*me1tt)+(3*on1tt)+(2*po1tt)+(1*hse1tt)+(3*el1tt)+(1*en1tt)+(1*de1tt))/19;
+        document.getElementById("tt").innerHTML = ((3*an1tt)+(2*ann1tt)+(3*me1tt)+(3*on1tt)+(2*po1tt)+(1*hse1tt)+(1*el1tt)+(1*en1tt)+(1*de1tt))/17;
 
 
 
